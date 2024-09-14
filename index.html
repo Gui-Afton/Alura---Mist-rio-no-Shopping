@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400..900&display=swap" rel="stylesheet">
+    <title>Mistério no Shopping</title>
+</head>
+<body>
+    <main>
+        <div class="passo ativo" id="passo-0">
+            <img src="img/shopping-passo0.png" alt="Entrada do shopping">
+            <p>Você decide investigar por conta própria um mistério que estava assolando a cidade por muitos meses. Você espera até a madrugada dentro de um shopping gigante e se depara com ele trancado com você dentro, após este momento você repensa se vale mesmo a pena continuar o que está fazendo, para saber o paradeiro de seu irmão. Se pergunta se decide porcurar uma saída antes das 6 da manhã ou entrar de cabeça neste mistério.</p>
+            <button class="btn-proximo" data-proximo="1">Continuar sua investigação</button>
+            <button class="btn-proximo" data-proximo="2">Procurar uma saída</button>
+        </div>
+        <div class="passo" id="passo-1">
+            <img src="img/AreaDeVendas.jpeg">
+            <p>Definitivamente você se joga de cabeça nisso e inicia sua busca por pistas. Você se encontra na área de vendas e pode escolher procurar nos fundos do setor ou nas lojas.</p>
+            <button class="btn-proximo" data-proximo="3">Investigar as lojas</button>
+            <button class="btn-proximo" data-proximo="4">Investigar nos fundos</button>
+        </div>
+        <div class="passo" id="passo-2">
+            <p>Pensando em que suas ações passaram do limite e que deve deixar as autoridades fazerem seu próprio trabalho. Totalmente arrependido, mas ainda não querendo ser visto para não prejudicar sua imagem, parte em busca de uma maneira de sair o mais cedo possível. Pode optar por descer pelo terraço, ou procurar no setor de “achados e perdidos” pode ser uma boa idéia.</p>
+            <button class="btn-proximo" data-proximo="5">ir para o terraço</button>
+            <button class="btn-proximo" data-proximo="6">ir para o "achados e perdidos"</button>
+        </div>
+        <div class="passo" id="passo-3">
+            <p>Ao procurar nos postos de vendas, você encontra documentos de identidades largadas no chão, elas estão manchadas, não é possível identificar quem são. Antes mesmo de comemorar, você escuta passos, para evitar ser visto vê uma lixeira convenientemente com um espaço perfeito para você se esconder nela.</p>
+            <button class="btn-proximo" data-proximo="7">Se esconder na lixeira</button>
+        </div>
+
+        <div class="passo" id="passo-4">
+            <img src="img/Retornando-para-casa.jpg" alt="Bad Ending">
+            <p>Você acessa a porta dos frundos da área comercial, mas um guarda te percebe e você é pego. Agora é levado a delegacia e não será fácil arrumar uma desculpa para as autoridades.</p>
+            <p>Bad Ending - Deseja seguir outra história?</p>
+            <button class="btn-proximo" data-proximo="0">Recomeçar</button>
+        </div>
+
+        <div class="passo" id="passo-5">
+            <p>Ao ir para o terraço, você escuta sons de passos, desesperado você corre o mais rápido que pode, porém, atrai mais guardas para você, até chegar o momento em que te encurralam em direção ao elevador, assim sendo pego e exposto nos jornais da tarde seguinte. Boa sorte para conseguir um novo emprego agora.</p>
+            <p>Bad Ending - GAME OVER</p>
+            <button class="btn-proximo" data-proximo="2">Checkpoint</button>
+        </div>
+
+        <div class="passo" id="passo-6">
+            <p>Cautelosamente você adentra, com sorte, não há ninguém nele e as câmeras estão em manutenção. Após uma longa busca em várias caixas, você acha uma caixa de ferramentas com diferentes chaves de fendas, você leva algumas por achar serem útil no futuro. Agora com ferramentas, lembra que pode desaparafusar uma das clarabóias do andar mais alto, e descer pelas escadas do terraço.</p>
+            <button class="btn-proximo" data-proximo="8">Ir para o últiimo andar</button>
+        </div>
+
+        <div class="passo" id="passo-7">
+            <img src="img/Fundos.jpg">
+            <p>Essa foi por pouco. Você decide procurar no depósito do estabalecimento, existe muitas chances de ter algo que ajude sua investigação lá, você adentra e sente não estar sozinho, existe algo aos arredores fazendo sons metálicos, você pode investigar próximo ou afastado da origem dos barulhos.</p>
+            <button class="btn-proximo" data-proximo="9">Aproximar</button>
+            <button class="btn-proximo" data-proximo="10">Continuar distânte</button>
+        </div>
+
+        <div class="passo" id="passo-8">
+            <img src="img/cama.png">
+            <p>Desaparafusando sem fazer barulho, você consegue subir até o terraço e encontrar as tão desejadas escadas. Imaginando estar aconchegado em sua cama neste momento enquanto as desce, escuta guardas nas redondezas, porém, consegue sair de lá sem ser notado e volta para sua casa, ainda se perguntando sobre a possibilidade de ter continuado aquela investigação.</p>
+            <p>Neutral Ending - Deseja seguir outra história?</p>
+            <button class="btn-proximo" data-proximo="0">Recomeçar</button>
+        </div>
+
+        <div class="passo" id="passo-9">
+            <p>Com cautela você se aproxima dos sons assustadores, evitando ser detectado, aos poucos, você vai abrindo caixas em seu caminho buscando outras pistas até que se depara com uma pilha de caixas coloridas, você decide ser sua última busca antes de dar o fora daquele lugar, nesse dia.</p>
+            <button class="btn-proximo" data-proximo="11">Investigar as pilhas de caixas</button>
+        </div>
+
+        <div class="passo" id="passo-10">
+            <p>Uma escolha inteligente, procurando do lado contrário dos sons, você encontra gravadores de áudios espalhados pelo chão, não seria nada demais até que você decide os checar e ver que, neles contém uma voz de uma pessoa afirmando ter cometido certos crimes e nada poderia impedi-lo de continuar, acreditando ter provas suficientes para entregar as autoridades e reabrirem o caso. Para você não seria difícil inventar uma explicação da origem dessas provas além de poder ser mais perigoso continuar naquele local por mais tempo. Agora basta voltar por onde entrou e contatar as autoridades.</p>
+            <button class="btn-proximo" data-proximo="12">Retornar e ir até as autoridades</button>
+        </div>
+
+        <div class="passo" id="passo-11">
+            <p>Ao subir na pilha, você faz barulho demais e atrai aquela fonte de sons metálicos para sua direção, você não tem muito tempo para fugir ou se esconder, mas faz isso mesmo assim. Em uma perseguição com o desconhecido você consegue se esconder, mas agora, ciente que aquela coisa sabe que existe alguém em seu territótio, não cansará até encontrá-lo. Sem opções de sair sem atraí-la, percebe que ficará trancado junto com ela até que o pior aconteça.</p>
+            <p>Bad Ending - GAME OVER</p>
+            <button class="btn-proximo" data-proximo="7">Checkpoint</button>
+        </div>
+
+        <div class="passo" id="passo-12">
+            <img src="img/GoodEnding.jpg" alt="final bom">
+            <p>Retornando até a entrada, ainda tomando cuidado em ser visto, consegue imporvisar uma rota de saída pela janela, ainda que alta, sai do shopping com as pistas ilesas. Chegando a delegacia de polícia, você explica sua teoria sobre o desaparecimentos destas pessoas, claro, ninguém é capaz de acreditar até apresentar suas provas, convencidos o suficiente para reabrir as investigações, eles voltam com tudo para encontrar tais pessoas, e você, feliz por ter ajudado a reabrir o caso policial que envolveu o sumiço de seu irmão mais novo, retorna para casa ansioso para ver o fim disso e reencontrar seu irmão.</p>
+            <p>Good Ending - Parabéns jogador!</p>
+            <button class="btn-proximo" data-proximo="0">Deseja seguir outra história?</button>
+        </div>
+    </main>
+    <script src="script.js"></script>
+</body>
+</html>
